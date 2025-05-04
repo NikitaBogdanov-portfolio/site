@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Video Creator Portfolio</title>
+    <style>
+        /* Сброс стилей */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+            /* Бесшовный фон с резервным цветом */
+            background-color: #222;
+            background-image: url('https://ilyakhasanov.ru/images/background/60.png');
+            background-repeat: repeat;
+            background-position: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            /* Без горизонтальных полос прокрутки */
+            min-height: 100%;
+        }
+        h1, h2 {
+            color: #fff;
+        }
+        h1 { margin-bottom: 10px; font-size: 2rem; }
+        h2 { margin: 2rem 0 1rem; font-size: 1.5rem; }
+        p.subtitle {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+        /* Сетка видео: 2 колонки, гибкая ширина */
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(240px, 1fr));
+            gap: 1.25rem;
+            margin: 0 auto 2.5rem;
+            width: 100%;
+            max-width: 960px;
+        }
+        .video-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1.25rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .video-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        .video-title {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+        }
+        .video-link {
+            display: inline-block;
+            padding: 0.625rem 1.25rem;
+            background-color: #4285F4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .video-link:hover {
+            background-color: #3367D6;
+        }
+        .contact {
+            margin-top: 2.5rem;
+            background-color: #fff;
+            display: inline-block;
+            padding: 1.25rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            text-align: left;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .contact a {
+            color: #1877f2;
+            text-decoration: none;
+        }
+        .contact a:hover { text-decoration: underline; }
+        .footer {
+            margin-top: 3rem;
+            color: #fff;
+            font-size: 0.875rem;
+        }
+        /* Для очень маленьких экранов (ширина < 400px) */
+        @media (max-width: 400px) {
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.25rem; }
+            p.subtitle { font-size: 1rem; }
+            .video-container { grid-template-columns: 1fr; }
+            .video-item { padding: 1rem; }
+            .video-title { font-size: 1rem; }
+            .video-link { padding: 0.5rem 1rem; font-size: 0.875rem; }
+            .contact { padding: 1rem; font-size: 0.875rem; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Nikita Bogdanov</h1>
+    <h2>Video creator</h2>
+
+    <p class="subtitle">My videos:</p>
+    <div class="video-container">
+        <div class="video-item">
+            <div class="video-title">talking head reals</div>
+            <a href="https://drive.google.com/file/d/1E78xdAQdXsy49FbbOCEoymMDt9O3eNgO/view?usp=sharing" class="video-link" target="_blank">Watch here</a>
+        </div>
+        <div class="video-item">
+            <div class="video-title">reddit reals</div>
+            <a href="https://drive.google.com/file/d/1H7D1Wwvbd9GU-oCaVL9XMRRKnmd8IbbK/view?usp=sharing" class="video-link" target="_blank">Watch here</a>
+        </div>
+        <div class="video-item">
+            <div class="video-title">motivation reals</div>
+            <a href="https://drive.google.com/file/d/1zL6-onQSPi_x__-z94_JZiHtrH99VDpg/view?usp=sharing" class="video-link" target="_blank">Watch here</a>
+        </div>
+        <div class="video-item">
+            <div class="video-title">bali clip</div>
+            <a href="https://drive.google.com/file/d/1-R24mWRaaIPOwGzTp19JCM-fU6o632A6/view?usp=sharing" class="video-link" target="_blank">Watch here</a>
+        </div>
+        <div class="video-item">
+            <div class="video-title">edit</div>
+            <a href="https://drive.google.com/file/d/1ujL9YvykcjLgVurfPLtt-Dn9kh8Lv4Li/view?usp=sharing" class="video-link" target="_blank">Watch here</a>
+        </div>
+        <div class="video-item">
+            <div class="video-title">be selfish</div>
+            <a href="https://drive.google.com/file/d/19YtAY_9eucLgAaVaqqvp6vupJSKIlvL2/view?usp=sharing" class="video-link" target="_blank">Watch here</a>
+        </div>
+    </div>
+
+    <h2>The best cases</h2>
+    <div class="video-container">
+        <div class="video-item">
+            <div class="video-title">The best case 1</div>
+            <a href="https://www.youtube.com/watch?v=4Xj6A0ebDmw&ab_channel=NEKICH" class="video-link" target="_blank">Watch here</a>
+        </div>
+        <div class="video-item">
+            <div class="video-title">The best case 2</div>
+            <a href="https://youtu.be/KhS_bamwA8E?si=ARUIbIeWn2dgcXlO" class="video-link" target="_blank">Watch here</a>
+        </div>
+        <div class="video-item">
+            <div class="video-title">The best case 3</div>
+            <a href="https://youtube.com/shorts/6Sx7AjuC8Rw?si=Waq2DwuYK-EyeLbu" class="video-link" target="_blank">Watch here</a>
+        </div>
+        <div class="video-item">
+            <div class="video-title">The best case 4</div>
+            <a href="https://youtube.com/shorts/0IoFvsUXbtw?si=NsulLSI8uPb2hNIa" class="video-link" target="_blank">Watch here</a>
+        </div>
+    </div>
+
+    <div class="contact">
+        <p>contact:</p>
+        <p>nikitabogdanow76@gmail.com</p>
+        <p>+36306063768</p>
+        <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61565020636283" target="_blank">My Profile</a></p>
+    </div>
+    <div class="footer"><p>2025 N.B</p></div>
+</body>
+</html>
